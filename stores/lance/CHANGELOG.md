@@ -1,5 +1,15 @@
 # @mastra/lance
 
+## 1.0.0-beta.1
+
+### Patch Changes
+
+- Add restart method to workflow run that allows restarting an active workflow run ([#9750](https://github.com/mastra-ai/mastra/pull/9750))
+  Add status filter to `listWorkflowRuns`
+  Add automatic restart to restart active workflow runs when server starts
+- Updated dependencies [[`00c2387`](https://github.com/mastra-ai/mastra/commit/00c2387f5f04a365316f851e58666ac43f8c4edf)]:
+  - @mastra/core@1.0.0-beta.3
+
 ## 1.0.0-beta.0
 
 ### Major Changes

@@ -1,5 +1,13 @@
 # @mastra/core
 
+## 1.0.0-beta.3
+
+### Patch Changes
+
+- Add restart method to workflow run that allows restarting an active workflow run ([#9750](https://github.com/mastra-ai/mastra/pull/9750))
+  Add status filter to `listWorkflowRuns`
+  Add automatic restart to restart active workflow runs when server starts
+
 ## 1.0.0-beta.2
 
 ### Patch Changes
