@@ -2,6 +2,7 @@ import { isEmpty } from 'radash';
 import type z from 'zod';
 import type { IMastraLogger } from '../logger';
 import type { Step } from './step';
+import type { StepFlowEntry } from './types';
 
 export function getZodErrors(error: z.ZodError) {
   // zod v4 returns issues instead of errors
@@ -96,3 +97,16 @@ export function createDeprecationProxy<T extends Record<string, any>>(
     },
   });
 }
+
+export const getStepIds = (entry: StepFlowEntry): string[] => {
+  if (entry.type === 'step' || entry.type === 'foreach' || entry.type === 'loop') {
+    return [entry.step.id];
+  }
+  if (entry.type === 'parallel' || entry.type === 'conditional') {
+    return entry.steps.map(s => s.step.id);
+  }
+  if (entry.type === 'sleep' || entry.type === 'sleepUntil') {
+    return [entry.id];
+  }
+  return [];
+};
