@@ -1042,8 +1042,8 @@ importers:
         version: 3.2.4(@types/debug@4.1.12)(@types/node@20.19.23)(@vitest/ui@3.2.4)(jiti@2.6.1)(jsdom@26.1.0)(lightningcss@1.30.2)(msw@2.11.6(@types/node@20.19.23)(typescript@5.9.3))(tsx@4.20.6)(yaml@2.8.1)
     optionalDependencies:
       '@grpc/grpc-js':
-        specifier: ^1.14.0
-        version: 1.14.0
+        specifier: ^1.14.1
+        version: 1.14.1
       '@opentelemetry/exporter-trace-otlp-grpc':
         specifier: ^0.205.0
         version: 0.205.0(@opentelemetry/api@1.9.0)
@@ -1536,7 +1536,7 @@ importers:
         version: 2.0.1
       '@mastra/observability':
         specifier: '>=1.0.0-0 <2.0.0-0'
-        version: 1.0.0-beta.0(@mastra/core@1.0.0-beta.0)
+        version: 1.0.0-beta.0(@mastra/core@1.0.0-beta.1)
       '@mastra/schema-compat':
         specifier: workspace:*
         version: link:../schema-compat
@@ -6512,8 +6512,8 @@ packages:
       '@modelcontextprotocol/sdk':
         optional: true
 
-  '@grpc/grpc-js@1.14.0':
-    resolution: {integrity: sha512-N8Jx6PaYzcTRNzirReJCtADVoq4z7+1KQ4E70jTg/koQiMoUSN1kbNjPOqpPbhMFhfU1/l7ixspPl8dNY+FoUg==}
+  '@grpc/grpc-js@1.14.1':
+    resolution: {integrity: sha512-sPxgEWtPUR3EnRJCEtbGZG2iX8LQDUls2wUS3o27jg07KqJFMq6YDeWvMo1wfpmy3rqRdS0rivpLwhqQtEyCuQ==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.7.15':
@@ -7136,11 +7136,11 @@ packages:
   '@marijn/find-cluster-break@1.0.2':
     resolution: {integrity: sha512-l0h88YhZFyKdXIFNfSWpyjStDjGHwZ/U7iobcK1cQQD8sejsONdQtTVU+1wVN1PBw40PiiHB1vA5S7VTfQiP9g==}
 
-  '@mastra/core@1.0.0-beta.0':
-    resolution: {integrity: sha512-xRwZAHHKS1FZ/3hlfHwhzvRq8OJC8jFLx/rxWvBZbhrMh1VwdC0hYr1yH9TRaLGFjjpc6YOubKLDZMJVXe67gQ==}
+  '@mastra/core@1.0.0-beta.1':
+    resolution: {integrity: sha512-Ls6ZWwgFyTQ4TBmrOuptGoYa4L/IZkPA8rGcSxYBan3Srn6a8EE9AlBMZKUSgKT47s8OMBR4PmEAVy2G5S6zDA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
-      '@mastra/observability': '>=0.0.0'
+      '@mastra/observability': '>=1.0.0-0 <2.0.0-0'
       zod: ^3.25.0 || ^4.0.0
     peerDependenciesMeta:
       '@mastra/observability':
@@ -19247,7 +19247,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@grpc/grpc-js@1.14.0':
+  '@grpc/grpc-js@1.14.1':
     dependencies:
       '@grpc/proto-loader': 0.8.0
       '@js-sdsl/ordered-map': 4.4.2
@@ -19890,7 +19890,7 @@ snapshots:
 
   '@marijn/find-cluster-break@1.0.2': {}
 
-  '@mastra/core@1.0.0-beta.0(@mastra/observability@1.0.0-beta.0)(ai@5.0.76(zod@3.25.76))(openapi-types@12.1.3)(zod@3.25.76)':
+  '@mastra/core@1.0.0-beta.1(@mastra/observability@1.0.0-beta.0)(ai@5.0.76(zod@3.25.76))(openapi-types@12.1.3)(zod@3.25.76)':
     dependencies:
       '@a2a-js/sdk': 0.2.5
       '@ai-sdk/provider-utils-v5': '@ai-sdk/provider-utils@3.0.12(zod@3.25.76)'
@@ -19920,7 +19920,7 @@ snapshots:
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
     optionalDependencies:
-      '@mastra/observability': 1.0.0-beta.0(@mastra/core@1.0.0-beta.0)
+      '@mastra/observability': 1.0.0-beta.0(@mastra/core@1.0.0-beta.1)
     transitivePeerDependencies:
       - '@hono/arktype-validator'
       - '@hono/effect-validator'
@@ -19937,9 +19937,9 @@ snapshots:
       - valibot
       - zod-openapi
 
-  '@mastra/observability@1.0.0-beta.0(@mastra/core@1.0.0-beta.0)':
+  '@mastra/observability@1.0.0-beta.0(@mastra/core@1.0.0-beta.1)':
     dependencies:
-      '@mastra/core': 1.0.0-beta.0(@mastra/observability@1.0.0-beta.0)(ai@5.0.76(zod@3.25.76))(openapi-types@12.1.3)(zod@3.25.76)
+      '@mastra/core': 1.0.0-beta.1(@mastra/observability@1.0.0-beta.0)(ai@5.0.76(zod@3.25.76))(openapi-types@12.1.3)(zod@3.25.76)
       zod: 3.25.76
 
   '@mastra/rag@1.3.1(@mastra/core@packages+core)(ai@4.3.19(react@19.2.0)(zod@3.25.76))(encoding@0.1.13)(zod@3.25.76)':
@@ -20391,7 +20391,7 @@ snapshots:
 
   '@opentelemetry/exporter-logs-otlp-grpc@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/otlp-exporter-base': 0.57.2(@opentelemetry/api@1.9.0)
@@ -20421,7 +20421,7 @@ snapshots:
 
   '@opentelemetry/exporter-metrics-otlp-grpc@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/exporter-metrics-otlp-http': 0.57.2(@opentelemetry/api@1.9.0)
@@ -20459,7 +20459,7 @@ snapshots:
 
   '@opentelemetry/exporter-trace-otlp-grpc@0.205.0(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/otlp-exporter-base': 0.205.0(@opentelemetry/api@1.9.0)
@@ -20471,7 +20471,7 @@ snapshots:
 
   '@opentelemetry/exporter-trace-otlp-grpc@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/otlp-exporter-base': 0.57.2(@opentelemetry/api@1.9.0)
@@ -20895,7 +20895,7 @@ snapshots:
 
   '@opentelemetry/otlp-grpc-exporter-base@0.205.0(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/otlp-exporter-base': 0.205.0(@opentelemetry/api@1.9.0)
@@ -20904,7 +20904,7 @@ snapshots:
 
   '@opentelemetry/otlp-grpc-exporter-base@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/otlp-exporter-base': 0.57.2(@opentelemetry/api@1.9.0)
@@ -25867,7 +25867,7 @@ snapshots:
 
   google-gax@4.6.1(encoding@0.1.13):
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@grpc/proto-loader': 0.7.15
       '@types/long': 4.0.2
       abort-controller: 3.0.0
@@ -25885,7 +25885,7 @@ snapshots:
 
   google-gax@5.0.4:
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@grpc/proto-loader': 0.8.0
       duplexify: 4.1.3
       google-auth-library: 10.4.1
